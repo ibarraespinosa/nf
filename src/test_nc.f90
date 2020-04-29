@@ -1,12 +1,10 @@
-subroutine test_ncf
-
+subroutine test_nc (name)
     use netcdf
-
     implicit none
     integer :: ncid, nc_err
-    character(len = 30) :: name
+    character(len = *) :: name
 
-    nc_err = nf90_open(name, nf90_nowrite, ncid)
+    nc_err = nf90_create(name, nf90_nowrite, ncid)
     nc_err = nf90_close(ncid)
-
-end subroutine test_ncf
+return
+end

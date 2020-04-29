@@ -7,10 +7,10 @@
  */
 
 /* .Fortran calls */
-extern void F77_NAME(test_ncf)(void *);
+extern void F77_NAME(test_nc)(void *);
 
 static const R_FortranMethodDef FortranEntries[] = {
-  {"test_ncf", (DL_FUNC) &F77_NAME(test_ncf), 1},
+  {"test_nc", (DL_FUNC) &F77_NAME(test_nc), 1},
   {NULL, NULL, 0}
 };
 
