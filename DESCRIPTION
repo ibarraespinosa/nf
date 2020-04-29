@@ -1,0 +1,20 @@
+Package: nf
+Type: Package
+Title: Netcdf-Fortran
+Version: 0.1.0
+Date: 2020-04-26
+Authors@R: c( 
+  person(given = "Sergio", family = "Ibarra-Espinosa",
+         role = c("aut", "cre"),
+         email = "sergio.ibarra@usp.br",
+         comment = c(ORCID = "0000-0002-3162-1905"))) 
+Description: NetCDF Fortran a structure of directories and template scripts.
+License: MIT + file LICENSE
+URL: https://atmoschem.github.io/nf/
+BugReports: https://github.com/atmoschem/nf/issues/
+LazyData: no
+Depends: R (>= 3.5.0)
+RoxygenNote: 7.0.2
+Encoding: UTF-8
+NeedsCompilation: yes
+Packaged: 2020-04-26 21:11:00 UTC; sergio

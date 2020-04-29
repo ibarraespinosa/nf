@@ -1,0 +1,13 @@
+PKG_FCFLAGS="`nf-config --fflags`"
+
+C_OBJS = init.o
+FT_OBJS = test_nc.o
+
+$(SHLIB): $(FT_OBJS) $(C_OBJS)
+
+all:
+	@$(MAKE) $(SHLIB)
+	@rm -f *.mod *.o
+
+
+init.o:  test_nc.o
